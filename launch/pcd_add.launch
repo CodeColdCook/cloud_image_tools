@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <node pkg="save_pcl_img" type="pcd_tools" name="pcd_add" output="screen"></node>
+	  <param name="/pcd_tools/folder_pcd_src" 
+          value="/home/mchris/buffer/pmtd_stitching_data_20230515_1830/103/pcd" />
+    <param name="/pcd_tools/folder_pcd_dst" 
+          value="/home/mchris/buffer/pmtd_stitching_data_20230515_1830/103/pcd" />
+</launch>
+

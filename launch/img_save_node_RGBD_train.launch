@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+	<param name="IMG_SAVE_PATH"    
+    	value="/home/dsyz/bag_datas/002_train_jiyuan/img" />
+    <param name="camera_config_path"    
+        value="/home/dsyz/000_workspace/001_img_pcl_tool_ws/src/save_pcl_img/config/triangle_RGBD_matrix_radtan.yml" />
+    <param name="image_topic"         	type="string" value="/camera/rgb/image_raw" />
+    <param name="img_save_name_headr"   type="string" value="train2_img_" />
+
+    <param name="frequence"   			type="int" value="6" />
+    <param name="if_save_img"   			type="bool" value="false" />
+    <param name="if_show_img"   			type="bool" value="false" />
+
+    <param name="if_undisort_img"   			type="bool" value="true" />
+    <param name="if_save_undisort_img"   			type="bool" value="false" />
+    <param name="if_show_undisort_img"   			type="bool" value="false" />
+
+    <param name="if_set_size_img"              type="bool" value="true" />
+    <param name="if_save_size_img"              type="bool" value="true" />
+    <param name="if_show_size_img"              type="bool" value="true" />
+    <param name="width_img_dst"             type="int" value="960" />
+    <param name="height_img_dst"             type="int" value="600" />
+
+    <param name="if_undisort_to_resize"              type="bool" value="true" />
+    
+
+    <node pkg="save_pcl_img" name="save_img_node" type="save_img_node" output="screen"></node>
+
+</launch>
+
